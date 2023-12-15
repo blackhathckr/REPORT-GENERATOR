@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF-REPORT GENERATOR</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./static/js/index.js">
+</head>
+
+<body>
+  <div class="form">
+    <div class="tab-content">
+      <div id="UI">
+        <h1 style="font-weight: bold;">PDF-REPORT GENERATOR</h1>
+
+        <form action="generate_pdf_report" method="post">
+
+          <div class="top-row">
+            <div class="field-wrap">
+              <input type="text" name="fname" required autocomplete="off" placeholder="First Name" />
+            </div>
+
+            <div class="field-wrap">
+              <input type="text" name="lname" required autocomplete="off" placeholder="Last Name" />
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <input type="text" name="usn" required autocomplete="off" placeholder="USN" />
+          </div>
+
+          <div class="field-wrap">
+            <input type="text" name="cgpa" required autocomplete="off" placeholder="CGPA" />
+          </div>
+
+          <button type="submit" class="button button-block" style="color: black;">GENERATE PDF-REPORT</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
